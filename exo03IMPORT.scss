@@ -1,0 +1,7 @@
+// On importe _base.scss pour récupérer certains de ses attributs
+@use 'base';
+
+.inverse {
+    background-color: base.$primary-color;
+    color: white;
+}

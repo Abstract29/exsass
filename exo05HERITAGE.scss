@@ -1,0 +1,23 @@
+//  Ce CSS va print car message-shared est ettendu
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+//  Ce CSS ne sera pas print car %equal-heights n'est pas ettendu
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+.message {
+    @extend %message-shared;
+}
+.success {
+    @extend %message-shared;
+    border-color: green;
+    border: 10px blue;
+}
+.error {
+    @extend %message-shared;
+    border-color: red;
+}
